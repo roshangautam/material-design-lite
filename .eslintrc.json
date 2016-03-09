@@ -5,9 +5,10 @@
     },
     "rules": {
       "dot-notation": 0,
-      "no-new": 1
+      "no-new": 1,
+      "no-var": 2
     },
     "globals": {
-      "componentHandler": true
+      "MaterialComponent": true
     }
 }
