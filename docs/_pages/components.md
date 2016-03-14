@@ -384,4 +384,15 @@ categories:
               file: tooltip-rich.html
             - caption: Multiple lines
               file: tooltip-multiline.html
+
+  - name: selectfield
+    title: Select
+    description: Useful information on hover.
+    components:
+      - name: selectfield
+        class: mdl-selectfield
+        snippets:
+          - snippet_group:
+            - caption: Select
+              file: select.html
 ---
