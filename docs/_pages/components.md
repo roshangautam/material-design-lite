@@ -384,4 +384,29 @@ categories:
               file: tooltip-rich.html
             - caption: Multiple lines
               file: tooltip-multiline.html
+  - name: pickers
+    title: Pickers
+    description: Useful information on hover.
+    components:
+      - name: pickers
+        class: mdl-datepicker 
+        snippets:
+          - snippet_group:
+            - caption: Datepicker attached to input
+              file: input-attached-datepicker.html
+          - snippet_group:              
+            - caption: Fixed datepicker
+              file: fixed-datepicker.html 
+          - snippet_group:              
+            - caption: Custom format datepicker
+              file: custom-format-datepicker.html 
+          - snippet_group:              
+            - caption: Custom allowed date range
+              file: custom-range-datepicker.html 
+          - snippet_group:              
+            - caption: Inline datepicker
+              file: inline-datepicker.html 
+          - snippet_group:              
+            - caption: Landscape datepicker
+              file: landscape-datepicker.html
 ---
