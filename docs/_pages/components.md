@@ -409,4 +409,14 @@ categories:
           - snippet_group:              
             - caption: Landscape datepicker
               file: landscape-datepicker.html
+  - name: selectfield
+    title: Select
+    description: Useful information on hover.
+    components:
+      - name: selectfield
+        class: mdl-selectfield
+        snippets:
+          - snippet_group:
+            - caption: Select
+              file: select.html
 ---
