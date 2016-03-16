@@ -1,3 +1,7 @@
+/**
+ * WARNING: THis code is stil not PR ready.
+ * Most of the values need to be extractd into variables.
+ */
 .mdl-selectfield {
   position: relative;
   font-size: 16px;
@@ -5,11 +9,21 @@
   box-sizing: border-box;
   width: 300px;
   max-width: 100%;
+  outline: 0;
   margin: 0;
   padding: 20px 0;
 
   &__select {
+    appearance: none;
     display: none;
+    height: 1px;
+    line-height: 0px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 1px;
   }
 
   &__selected-option {
@@ -18,7 +32,19 @@
     height: 16px;
     line-height: 16px;
     padding: 4px 0;
+    padding-right: 25px;
     position: relative;
+
+    &-title {
+      box-sizing: border-box;
+      display: inline-block;
+      height: 16px;
+      margin-right: 24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
 
     &:after {
       border-bottom: 2px solid $color-primary;
@@ -86,6 +112,20 @@
 
     &.is-selected {
       background-color: #eeeeee;
+      color: $color-primary;
+
+      .mdl-selectfield__menu-item-icon-checked {
+        color: $color-primary;
+        display: block;
+      }
+
+      .mdl-selectfield__menu-item-icon-unchecked {
+        display: none;
+      }
+    }
+
+    &.is-active {
+      color: $color-accent;
     }
   }
 
